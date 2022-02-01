@@ -26,7 +26,7 @@ body {
     position: absolute;
     top: -2.7vmin;
     font: 1vmax "Inter";
-    color: rgb(28, 27, 32);
+    color: rgb(48, 48, 48);
     font-weight: 700;
 }
 
@@ -63,4 +63,104 @@ body {
 
 #typer {
     font-size: 1.7vmax;
+    color: rgb(28, 27, 32);
+}
+
+.icons {
+    position: relative;
+    bottom: -57vh;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#github-icon,
+#linkedin-icon {
+    filter: invert(100%) sepia(0%) saturate(2010%) hue-rotate(84deg)
+        brightness(114%) contrast(88%);
+    transition: all 0.2s ease-in-out;
+}
+
+#mail-icon,
+#instagram-icon {
+    filter: invert(43%) sepia(47%) saturate(1241%) hue-rotate(322deg)
+        brightness(108%) contrast(86%);
+    transition: all 0.2s ease-in-out;
+}
+
+#github-icon:hover,
+#linkedin-icon:hover,
+#mail-icon:hover,
+#instagram-icon:hover {
+    filter: invert(6%) sepia(6%) saturate(1867%) hue-rotate(211deg)
+        brightness(92%) contrast(88%);
+    transform: scale(1.5);
+}
+
+.more-about-button {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    font: 1.5vmax "Inter";
+    font-weight: 900;
+}
+
+#more-button-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#more-button-li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#more-button-span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    display: inline-block;
+    padding-bottom: 0.2vmax;
+    background-image: linear-gradient(#000, #000);
+    background-position: left bottom;
+    background-size: 100% 0.2vmax;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+}
+
+#more-button-span:before,
+#more-button-span:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0.8vh;
+    top: 35%;
+    margin-top: -0.5px;
+    background: var(--favcolor);
+    opacity: 0.5;
+}
+
+#more-button-span:after {
+    right: 1vw;
+    background: var(--favcolor);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#more-button-span:hover:before {
+    background: var(--favcolor);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#more-button-span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+#more-button-span:hover {
+    background-position: 100% bottom;
+    background-size: 0% 0.2vmax;
 }
