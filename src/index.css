@@ -1,20 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 
+:root {
+    --favcolor: rgb(237, 100, 89);
+}
+
 html,
 body {
     margin: 0px;
-    height: 100vw;
-    border: 2vh solid white;
+    height: 100vh;
 }
 
 .header {
-    height: 92vh;
+    height: 100vh;
     position: relative;
+    border: 3.5vmin solid white;
     background: linear-gradient(
         95deg,
-        rgb(237, 100, 89) 50%,
+        var(--favcolor) 49.9%,
         rgb(240, 240, 240) 50%
     );
+}
+
+#mail,
+#location {
+    position: absolute;
+    top: -2.7vmin;
+    font: 1vmax "Inter";
+    color: rgb(28, 27, 32);
+    font-weight: 700;
+}
+
+#location {
+    left: 0vw;
+}
+
+#mail {
+    right: 0vw;
+    text-decoration: none !important;
+}
+
+#mail:hover {
+    color: var(--favcolor);
 }
 
 .hello {
@@ -26,15 +52,15 @@ body {
 }
 
 #hello {
-    font: 2.2em "Inter";
+    font: 3vmax "Inter";
     font-weight: 900;
 }
 
 #iam {
-    font: 4em "Inter";
+    font: 4.5vmax "Inter";
     font-weight: 900;
 }
 
 #typer {
-    font-size: 1.3em;
+    font-size: 1.7vmax;
 }
