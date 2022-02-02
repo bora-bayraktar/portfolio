@@ -10,10 +10,15 @@ body {
     height: 100vh;
 }
 
+@media screen and (min-width: 600px) {
+    .header {
+        border: 3.5vmin solid white;
+    }
+}
+
 .header {
     height: 100vh;
     position: relative;
-    border: 3.5vmin solid white;
     background: linear-gradient(
         95deg,
         var(--favcolor) 49.9%,
