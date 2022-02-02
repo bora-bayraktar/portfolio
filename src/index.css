@@ -51,7 +51,7 @@ body {
 .hello {
     color: rgb(28, 27, 32);
     position: absolute;
-    top: 30%;
+    top: 33%;
     width: 100%;
     text-align: center;
 }
@@ -72,34 +72,23 @@ body {
 }
 
 .icons {
-    position: relative;
-    bottom: -57vh;
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
+    position: absolute;
+    width: 30%;
+    bottom: 5vh;
+    left: 5vw;
+    font-size: 3vmin;
+    display: flex;
 }
 
-#github-icon,
-#linkedin-icon {
-    filter: invert(100%) sepia(0%) saturate(2010%) hue-rotate(84deg)
-        brightness(114%) contrast(88%);
+.icons a {
+    color: rgb(240, 240, 240);
+    margin: 0 2vw;
     transition: all 0.2s ease-in-out;
 }
 
-#mail-icon,
-#instagram-icon {
-    filter: invert(43%) sepia(47%) saturate(1241%) hue-rotate(322deg)
-        brightness(108%) contrast(86%);
-    transition: all 0.2s ease-in-out;
-}
-
-#github-icon:hover,
-#linkedin-icon:hover,
-#mail-icon:hover,
-#instagram-icon:hover {
-    filter: invert(6%) sepia(6%) saturate(1867%) hue-rotate(211deg)
-        brightness(92%) contrast(88%);
+.icons a:hover {
     transform: scale(1.5);
+    color: rgb(28, 27, 32);
 }
 
 .more-about-button {
