@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@900&display=swap&family=Comforter&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Inter:wght@900&family=Montserrat:wght@400;500;600;700;900&display=swap");
 :root {
     --favcolor: rgb(237, 100, 89);
     --black: rgb(28, 27, 32);
@@ -8,6 +7,7 @@
 html,
 body {
     margin: 0px;
+    height: 100vh;
 }
 
 /*----------------- HEADER -----------------*/
@@ -167,13 +167,13 @@ body {
 .about {
     background-color: rgb(240, 240, 240);
     position: relative;
-    height: 100vh;
+    height: 200vh;
 }
 
 .about-header {
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 15vh;
+    left: 10vw;
 }
 
 .about-header h1 {
@@ -183,10 +183,89 @@ body {
     line-height: 0.8em;
 }
 
+.introduction {
+    left: 10vw;
+    top: 45vh;
+    position: absolute;
+}
+
 .introduction h3 {
-    font: 2vw "Montserrat";
+    font: 2vmax "Montserrat";
+    font-weight: 900;
+    width: 30vw;
+}
+
+.introduction p {
+    margin-top: 4vh;
+    font: 1.2vmax "Montserrat";
+    color: rgb(125, 125, 125);
+    font-weight: 600;
+    line-height: 2.7vh;
+    width: 30vw;
 }
 
 #handwritten-me {
-    font: 3.5vw "Comforter";
+    font: 3.5vmax "Comforter";
+    line-height: 1vw;
+}
+
+.about img {
+    width: 25vmin;
+    position: absolute;
+    right: 15vw;
+    top: 15vh;
+    transition: 0.2s ease-in-out;
+    border: 5px solid var(--favcolor);
+    border-radius: 50%;
+}
+
+.about img:hover {
+    transform: scale(1.2);
+}
+
+.skills {
+    width: 50vw;
+    height: 80vh;
+    background-color: var(--black);
+    position: absolute;
+    right: 0;
+    top: 50vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills h3 {
+    font: 1.1vw "Montserrat";
+    color: var(--favcolor);
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+
+.programming,
+.tools,
+.languages,
+.interests {
+    flex: 50%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    margin-top: 8vw;
+}
+
+.languages,
+.interests {
+    margin-top: 0;
+    margin-bottom: 4vw;
+}
+
+@media screen and (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+    }
+}
+
+.skills p {
+    color: rgb(240, 240, 240);
+    font: 1vw "Montserrat";
+    font-weight: 400;
 }
