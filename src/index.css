@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@900&display=swap&family=Comforter&display=swap");
 
 :root {
     --favcolor: rgb(237, 100, 89);
+    --black: rgb(28, 27, 32);
 }
 
 html,
 body {
     margin: 0px;
-    height: 100vh;
 }
+
+/*----------------- HEADER -----------------*/
 
 @media screen and (min-width: 600px) {
     .header {
@@ -49,7 +51,7 @@ body {
 }
 
 .hello {
-    color: rgb(28, 27, 32);
+    color: var(--black);
     position: absolute;
     top: 33%;
     width: 100%;
@@ -68,7 +70,7 @@ body {
 
 #typer {
     font-size: 1.7vmax;
-    color: rgb(28, 27, 32);
+    color: var(--black);
 }
 
 .icons {
@@ -88,7 +90,7 @@ body {
 
 .icons a:hover {
     transform: scale(1.5);
-    color: rgb(28, 27, 32);
+    color: var(--black);
 }
 
 .more-about-button {
@@ -114,6 +116,7 @@ body {
     position: relative;
     display: block;
     cursor: pointer;
+    color: var(--black);
 
     display: inline-block;
     padding-bottom: 0.2vmax;
@@ -157,4 +160,33 @@ body {
 #more-button-span:hover {
     background-position: 100% bottom;
     background-size: 0% 0.2vmax;
+}
+
+/*----------------- ABOUT -----------------*/
+
+.about {
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    height: 100vh;
+}
+
+.about-header {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.about-header h1 {
+    font: 7vh "Montserrat";
+    color: var(--favcolor);
+    font-weight: 900;
+    line-height: 0.8em;
+}
+
+.introduction h3 {
+    font: 2vw "Montserrat";
+}
+
+#handwritten-me {
+    font: 3.5vw "Comforter";
 }

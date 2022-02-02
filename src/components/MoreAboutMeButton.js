@@ -6,7 +6,7 @@ class MoreAboutMeButton extends Component {
             <div className="more-about-button">
                 <ul id="more-button-ul">
                     <li id="more-button-li">
-                        <span id="more-button-span">More About Me</span>
+                        <a href="#about"><span id="more-button-span">More About Me</span></a>
                     </li>
                 </ul>
             </div>
