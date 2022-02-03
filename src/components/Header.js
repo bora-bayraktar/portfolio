@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Hello from "./Hello";
 import Frame from "./Frame";
 import Icons from "./Icons";
-import MoreAboutMeButton from "./MoreAboutMeButton";
+import FavButton from "./FavButton";
 
 class Header extends Component {
     render() {
@@ -11,7 +11,11 @@ class Header extends Component {
                 <Frame />
                 <Hello />
                 <Icons />
-                <MoreAboutMeButton />
+                <FavButton
+                    name="more-about"
+                    content="More About Me"
+                    goHere="#about"
+                />
             </div>
         );
     }

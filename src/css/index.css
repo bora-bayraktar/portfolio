@@ -94,7 +94,7 @@ body {
     color: var(--black);
 }
 
-.more-about-button {
+.more-about {
     position: absolute;
     bottom: 5vh;
     right: 5vw;
@@ -102,18 +102,18 @@ body {
     font-weight: 900;
 }
 
-#more-button-ul {
+.fav-button ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#more-button-li {
+.fav-button li {
     display: inline-block;
     padding: 0 20px;
 }
 
-#more-button-span {
+.fav-button span {
     position: relative;
     display: block;
     cursor: pointer;
@@ -128,8 +128,8 @@ body {
     transition: background-size 0.5s;
 }
 
-#more-button-span:before,
-#more-button-span:after {
+.fav-button span:before,
+.fav-button span:after {
     content: "";
     position: absolute;
     width: 0%;
@@ -140,25 +140,25 @@ body {
     opacity: 0.5;
 }
 
-#more-button-span:after {
+.fav-button span:after {
     right: 1vw;
     background: var(--favcolor);
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#more-button-span:hover:before {
+.fav-button span:hover:before {
     background: var(--favcolor);
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#more-button-span:hover:after {
+.fav-button span:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
 }
 
-#more-button-span:hover {
+.fav-button span:hover {
     background-position: 100% bottom;
     background-size: 0% 0.2vmax;
 }
@@ -186,7 +186,7 @@ body {
 
 .introduction {
     left: 10vw;
-    top: 45vh;
+    top: 50vh;
     position: absolute;
 }
 
@@ -226,47 +226,46 @@ body {
 
 .skills {
     width: 50vw;
-    height: 80vh;
+    height: 50vh;
     background-color: var(--black);
+    border-radius: 0.7%;
     position: absolute;
     right: 0;
     top: 50vh;
 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    box-sizing: border-box;
 }
 
-.skills h3 {
-    font: 1.1vw "Montserrat";
+.skills div h3{
+    font: 1.8vh "Montserrat";
     color: var(--favcolor);
-    font-weight: 700;
-    margin-bottom: 3vh;
+    line-height: 4vh;
 }
 
-.programming,
-.tools,
-.languages,
-.interests {
-    flex: 50%;
-    padding-right: 8vw;
-    padding-left: 8vw;
-    margin-top: 8vw;
-}
-
-.languages,
-.interests {
-    margin-top: 0;
-    margin-bottom: 4vw;
-}
-
-@media screen and (max-width: 600px) {
-    .skills {
-        flex-direction: column;
-    }
-}
-
-.skills p {
+.skills div p{
+    font: 1.4vh "Montserrat";
     color: rgb(240, 240, 240);
-    font: 1vw "Montserrat";
-    font-weight: 400;
+}
+
+.programming, .tools {
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+.languages, .interests {
+    position: relative; 
+    left: 25%;
+    top: 15%;
+}
+
+.display-resume {
+    position: absolute;
+    left: 9vw;
+    top: 90vh;
+    font: 1.5vmax "Inter";
+    color: var(--black);
 }
