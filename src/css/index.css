@@ -97,7 +97,7 @@ body {
 .more-about {
     position: absolute;
     bottom: 5vh;
-    right: 5vw;
+    right: 7vw;
     font: 1.5vmax "Inter";
     font-weight: 900;
 }
@@ -110,7 +110,6 @@ body {
 
 .fav-button li {
     display: inline-block;
-    padding: 0 20px;
 }
 
 .fav-button span {
@@ -178,7 +177,7 @@ body {
 }
 
 .about-header h1 {
-    font: 10vh "Montserrat";
+    font: 11vmin "Montserrat";
     color: var(--favcolor);
     font-weight: 900;
     line-height: 0.8em;
@@ -188,12 +187,12 @@ body {
     left: 10vw;
     top: 50vh;
     position: absolute;
+    width: 30vw;
 }
 
 .introduction h3 {
     font: 2vmax "Montserrat";
     font-weight: 900;
-    width: 30vw;
 }
 
 .introduction p {
@@ -202,7 +201,6 @@ body {
     color: rgb(125, 125, 125);
     font-weight: 600;
     line-height: 2.7vh;
-    width: 30vw;
 }
 
 #handwritten-me {
@@ -228,7 +226,7 @@ body {
     width: 50vw;
     height: 50vh;
     background-color: var(--black);
-    border-radius: 0.7%;
+    border-radius: 1%;
     position: absolute;
     right: 0;
     top: 50vh;
@@ -239,33 +237,98 @@ body {
     box-sizing: border-box;
 }
 
-.skills div h3{
+.skills div h3 {
     font: 1.8vh "Montserrat";
     color: var(--favcolor);
     line-height: 4vh;
 }
 
-.skills div p{
+.skills div p {
     font: 1.4vh "Montserrat";
     color: rgb(240, 240, 240);
 }
 
-.programming, .tools {
+.programming,
+.tools {
     position: relative;
     left: 25%;
     top: 25%;
+    width: 15vw;
 }
 
-.languages, .interests {
-    position: relative; 
+.languages,
+.interests {
+    position: relative;
     left: 25%;
     top: 15%;
+    width: 15vw;
 }
 
 .display-resume {
     position: absolute;
-    left: 9vw;
-    top: 90vh;
+    left: 10vw;
+    top: 80vh;
     font: 1.5vmax "Inter";
     color: var(--black);
+}
+
+@media screen and (max-width: 605px) {
+    .about-header {
+        top: 10vh;
+    }
+
+    .about img {
+        left: 10vw;
+        top: 27vh;
+        border: 3px solid var(--favcolor);
+    }
+
+    .introduction {
+        position: relative;
+        top: 10vh;
+        left: 60vw;
+    }
+
+    .introduction h3 {
+        font-size: 2.6vh;
+    }
+
+    .introduction p {
+        position: absolute;
+        top: 12vh;
+        right: -5vw;
+        width: 50vw;
+    }
+
+    .display-resume {
+        position: relative;
+        left: 10.5vw;
+        top: 31vh;
+        width: 30vw;
+    }
+
+    .skills {
+        top: 52vh;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .programming,
+    .tools {
+        position: relative;
+        top: 25%;
+        width: 15vw;
+    }
+
+    .languages,
+    .interests {
+        position: relative;
+        top: 10%;
+        width: 15vw;
+    }
+
+    .skills div p {
+        margin-bottom: 1vh;
+        width: 20vh;
+    }
 }

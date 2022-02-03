@@ -10,14 +10,14 @@ class About extends Component {
             <div className="about" id="about">
                 <AboutHeader />
                 <Introduction />
-                <img src={require("../assets/me.png")} />
-                <Skills />
                 <FavButton
                     name="display-resume"
                     content="Display Resume"
                     goHere="../assets/resume.pdf" // TODO: Make the PDF openable.
                     target="_blank"
                 />
+                <img src={require("../assets/me.png")} />
+                <Skills />
             </div>
         );
     }
