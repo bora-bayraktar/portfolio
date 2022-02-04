@@ -167,7 +167,7 @@ body {
 .about {
     background-color: rgb(240, 240, 240);
     position: relative;
-    height: 110vh;
+    height: 120vh;
 }
 
 .about-header {
@@ -200,7 +200,7 @@ body {
     font: 1.2vmax "Montserrat";
     color: rgb(125, 125, 125);
     font-weight: 600;
-    line-height: 2.7vh;
+    line-height: 2.9vh;
 }
 
 #handwritten-me {
@@ -224,7 +224,7 @@ body {
 
 .skills {
     width: 50vw;
-    height: 50vh;
+    height: 70vh;
     background-color: var(--black);
     border-radius: 1%;
     position: absolute;
@@ -266,8 +266,6 @@ body {
 
 .display-resume {
     position: absolute;
-    left: 10vw;
-    top: 80vh;
     font: 1.5vmax "Inter";
     color: var(--black);
 }
@@ -278,13 +276,13 @@ body {
     }
 
     .about img {
+        position: relative;
         left: 10vw;
-        top: 27vh;
+        top: 25vh;
         border: 3px solid var(--favcolor);
     }
 
     .introduction {
-        position: relative;
         top: 10vh;
         left: 60vw;
     }
@@ -301,10 +299,10 @@ body {
     }
 
     .display-resume {
-        position: relative;
-        left: 10.5vw;
-        top: 31vh;
-        width: 30vw;
+        position: absolute;
+        left: 7vw;
+        top: 36vh;
+        width: 28vw;
     }
 
     .skills {
@@ -330,7 +328,7 @@ body {
 
     .skills div p {
         margin-bottom: 1vh;
-        width: 20vh;
+        width: 20vw;
     }
 }
 
