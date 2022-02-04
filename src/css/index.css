@@ -167,7 +167,7 @@ body {
 .about {
     background-color: rgb(240, 240, 240);
     position: relative;
-    height: 200vh;
+    height: 110vh;
 }
 
 .about-header {
@@ -325,6 +325,7 @@ body {
         position: relative;
         top: 10%;
         width: 15vw;
+        height: 22vh;
     }
 
     .skills div p {
@@ -332,3 +333,6 @@ body {
         width: 20vh;
     }
 }
+
+/*----------------- EXPERIENCE & EDUCATION -----------------*/
+
