@@ -238,13 +238,13 @@ body {
 }
 
 .skills div h3 {
-    font: 1.8vh "Montserrat";
+    font: 1.1em "Montserrat";
     color: var(--favcolor);
     line-height: 4vh;
 }
 
 .skills div p {
-    font: 1.4vh "Montserrat";
+    font: 0.9em "Montserrat";
     color: rgb(240, 240, 240);
 }
 
@@ -262,12 +262,13 @@ body {
     left: 25%;
     top: 15%;
     width: 15vw;
+    height: 25vh;
 }
 
 .display-resume {
-    position: absolute;
     font: 1.5vmax "Inter";
     color: var(--black);
+    margin-top: 4vh;
 }
 
 @media screen and (max-width: 605px) {
@@ -303,12 +304,14 @@ body {
         left: 7vw;
         top: 36vh;
         width: 28vw;
+        margin-top: 0;
     }
 
     .skills {
         top: 52vh;
         width: 100%;
         border-radius: 0%;
+        height: 50vh;
     }
 
     .programming,
@@ -329,8 +332,12 @@ body {
     .skills div p {
         margin-bottom: 1vh;
         width: 20vw;
+        font-size: 0.7em;
+    }
+
+    .skills div h3 {
+        font-size: 0.7em;
     }
 }
 
 /*----------------- EXPERIENCE & EDUCATION -----------------*/
-
