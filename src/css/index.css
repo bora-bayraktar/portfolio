@@ -301,8 +301,8 @@ body {
 
     .display-resume {
         position: absolute;
-        left: 7vw;
-        top: 36vh;
+        left: -50vw;
+        top: 30vh;
         width: 28vw;
         margin-top: 0;
     }
@@ -323,7 +323,6 @@ body {
 
     .languages,
     .interests {
-        position: relative;
         top: 10%;
         width: 15vw;
         height: 22vh;
