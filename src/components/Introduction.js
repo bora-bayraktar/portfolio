@@ -27,6 +27,22 @@ class Introduction extends Component {
                     goHere="../assets/resume.pdf" // TODO: Make the PDF openable.
                     target="_blank"
                 />
+                <div className="info-container">
+                    <div className="info">
+                        <h5>FULLNAME:</h5>
+                        <p>Kemal Bora Bayraktar</p>
+                    </div>
+                    <div className="info">
+                        <h5>LOCATION:</h5>
+                        <p>Istanbul/Turkey</p>
+                    </div>
+                    <div className="info">
+                        <h5>GITHUB:</h5>
+                        <a href="https://github.com/bora-bayraktar">
+                            <p>github.com/bora-bayraktar</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         );
     }

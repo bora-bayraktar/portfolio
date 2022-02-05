@@ -269,6 +269,42 @@ body {
     font: 1.5vmax "Inter";
     color: var(--black);
     margin-top: 4vh;
+    top: 50vh;
+    position: absolute;
+}
+
+.info-container {
+    top: 30vh;
+    margin-top: 4vh;
+}
+
+.info {
+    margin-bottom: 2vh;
+}
+
+.info h5 {
+    font: 1rem "Montserrat";
+    font-weight: 600;
+    margin: 0;
+}
+
+.info p {
+    font: 0.9rem "Montserrat";
+    font-weight: 400;
+    margin: 0;
+    margin-top: 0.5vh;
+}
+
+.info a {
+    text-decoration: none !important;
+}
+
+.info a p {
+    transition: all 0.2s ease-in-out;
+}
+
+.info a p:hover {
+    color: var(--favcolor);
 }
 
 @media screen and (max-width: 605px) {
@@ -277,15 +313,16 @@ body {
     }
 
     .about img {
-        position: relative;
-        left: 10vw;
-        top: 25vh;
+        position: absolute;
+        right: 15vw;
+        top: 10vh;
         border: 3px solid var(--favcolor);
     }
 
     .introduction {
-        top: 10vh;
-        left: 60vw;
+        top: 27vh;
+        left: 10vw;
+        width: 80%;
     }
 
     .introduction h3 {
@@ -293,22 +330,31 @@ body {
     }
 
     .introduction p {
-        position: absolute;
-        top: 12vh;
-        right: -5vw;
-        width: 50vw;
+        margin-top: 1vh;
+    }
+
+    .info-container {
+        top: 15vh;
+    }
+
+    .info h5 {
+        margin: 0;
+        font-size: 3.3vw;
+    }
+
+    .info p {
+        margin: 0;
+        margin-top: 0.5vh;
+        font-size: 3.3vw;
     }
 
     .display-resume {
-        position: absolute;
-        left: -50vw;
-        top: 30vh;
-        width: 28vw;
-        margin-top: 0;
+        top: 37vh;
+        right: 30vw;
     }
 
     .skills {
-        top: 52vh;
+        top: 76vh;
         width: 100%;
         border-radius: 0%;
         height: 50vh;
