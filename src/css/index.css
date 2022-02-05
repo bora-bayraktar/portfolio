@@ -172,7 +172,7 @@ body {
 
 .about-header {
     position: absolute;
-    top: 15vh;
+    top: 7vh;
     left: 10vw;
 }
 
@@ -185,7 +185,7 @@ body {
 
 .introduction {
     left: 10vw;
-    top: 50vh;
+    top: 37vh;
     position: absolute;
     width: 30vw;
 }
@@ -199,7 +199,7 @@ body {
     margin-top: 4vh;
     font: 1.2vmax "Montserrat";
     color: rgb(125, 125, 125);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2.9vh;
 }
 
@@ -212,7 +212,7 @@ body {
     width: 25vmin;
     position: absolute;
     right: 15vw;
-    top: 15vh;
+    top: 7vh;
     transition: 0.2s ease-in-out;
     border: 5px solid var(--favcolor);
     border-radius: 50%;
@@ -229,7 +229,7 @@ body {
     border-radius: 1%;
     position: absolute;
     right: 0;
-    top: 50vh;
+    top: 37vh;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -239,13 +239,13 @@ body {
 
 .skills div h3 {
     font: 1.1em "Montserrat";
-    color: var(--favcolor);
+    color: rgb(240, 240, 240);
     line-height: 4vh;
 }
 
 .skills div p {
-    font: 0.9em "Montserrat";
-    color: rgb(240, 240, 240);
+    font: 0.95em "Montserrat";
+    color: rgb(90, 90, 90);
 }
 
 .programming,
@@ -309,18 +309,18 @@ body {
 
 @media screen and (max-width: 605px) {
     .about-header {
-        top: 10vh;
+        top: 6vh;
     }
 
     .about img {
         position: absolute;
         right: 15vw;
-        top: 10vh;
+        top: 6vh;
         border: 3px solid var(--favcolor);
     }
 
     .introduction {
-        top: 27vh;
+        top: 23vh;
         left: 10vw;
         width: 80%;
     }
@@ -350,11 +350,12 @@ body {
 
     .display-resume {
         top: 37vh;
-        right: 30vw;
+        width: 100%;
+        text-align: center;
     }
 
     .skills {
-        top: 76vh;
+        top: 72vh;
         width: 100%;
         border-radius: 0%;
         height: 50vh;
@@ -386,3 +387,137 @@ body {
 }
 
 /*----------------- EXPERIENCE & EDUCATION -----------------*/
+
+.more {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+}
+
+.more-header {
+    position: absolute;
+    left: 10vw;
+    top: 7vh;
+}
+
+.more-header h1 {
+    font: 11vmin "Montserrat";
+    color: var(--black);
+    font-weight: 900;
+    line-height: 0.8em;
+}
+
+.experience-education {
+    position: inherit;
+    top: 40vmin;
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.info-class {
+    width: 40vw;
+}
+
+.info-class h4 {
+    font-weight: 700;
+    color: var(--favcolor);
+    margin-bottom: 3vh;
+}
+
+.info-class h6 {
+    color: var(--black);
+}
+
+.info-content h6 {
+    font-weight: 700;
+}
+
+.info-kind h6 {
+    font-weight: 600;
+}
+
+.info-kind p {
+    font-style: italic;
+}
+
+.info-class p {
+    margin-bottom: 5vh;
+}
+
+.info-class-container {
+    display: inline-flex;
+}
+
+.experience {
+    text-align: right;
+}
+
+.education {
+    text-align: left;
+}
+
+.experience .info-class-container {
+    text-align: right;
+}
+
+.education .info-class-container {
+    text-align: left;
+}
+
+.info-kind {
+    width: 12vw;
+}
+
+.info-icon {
+    width: 2.5vmin;
+    height: 2.5vmin;
+    font-size: 1.5vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 240, 240);
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+.info-content {
+    width: 20vw;
+}
+
+.education .info-class-container .info-content {
+    text-align: left;
+    padding-right: 2vw;
+}
+
+.education .info-class-container .info-icon {
+    text-align: center;
+    margin-left: 3vw;
+}
+
+.education .info-class-container .info-kind {
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.experience .info-class-container .info-content {
+    text-align: right;
+    padding-left: 2vw;
+}
+
+.experience .info-class-container .info-icon {
+    text-align: center;
+    margin-right: 3vw;
+}
+
+.experience .info-class-container .info-kind {
+    text-align: right;
+    margin-right: 2vw;
+}
+
+.vl {
+    border-left: 0.1vw solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 5vh;
+}
