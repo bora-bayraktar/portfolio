@@ -27,7 +27,6 @@ class Skills extends Component {
                     <h3>Interests</h3>
                     <p>Voleyball, Football, Basketball</p>
                     <p>Computer Science</p>
-                    <p>F1</p>
                 </div>
             </div>
         );

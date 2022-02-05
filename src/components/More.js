@@ -12,6 +12,15 @@ class More extends Component {
                         ORE<span style={{ color: "rgb(237, 100, 89)" }}>.</span>
                     </h1>
                 </div>
+                <h3>
+                    More about{" "}
+                    <span
+                        id="handwritten-me"
+                        style={{ color: "rgb(237, 100, 89)" }}
+                    >
+                        my
+                    </span>{" "}carrier.
+                </h3>
                 <div className="experience-education">
                     <Experience />
                     <Education />
