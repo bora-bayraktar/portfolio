@@ -13,7 +13,7 @@ class Skills extends Component {
                 </div>
                 <div className="tools">
                     <h3>Tools</h3>
-                    <p>React</p>
+                    <p>React, Bootstrap</p>
                     <p>Git</p>
                     <p>Microsoft Office</p>
                 </div>

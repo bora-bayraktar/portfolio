@@ -566,7 +566,7 @@ body {
     .info-content {
         width: 53vw;
     }
-    
+
     .info-icon {
         display: none !important;
     }
@@ -579,17 +579,19 @@ body {
         text-align: right;
         padding-right: 0;
     }
-    
+
     .education .info-class-container .info-kind {
         text-align: left;
         margin: 0;
     }
-    
+
     .experience .info-class-container .info-content {
         text-align: right;
     }
-    
+
     .experience .info-class-container .info-kind {
         text-align: left;
     }
 }
+
+/*----------------- EXPERIENCE & EDUCATION -----------------*/
