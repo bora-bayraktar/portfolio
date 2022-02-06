@@ -21,12 +21,6 @@ class Introduction extends Component {
                     life. I try to improve my programming skills and knowledge
                     by researching and learning in my free time.
                 </p>
-                <FavButton
-                    name="display-resume"
-                    content="Display Resume"
-                    goHere="https://user-images.githubusercontent.com/78881290/152663929-5355700c-0689-41cf-a678-8dcb223c100a.png" // TODO: Make the PDF openable.
-                    target="_blank"
-                />
                 <div className="info-container">
                     <div className="info">
                         <h5>FULLNAME:</h5>
@@ -42,7 +36,19 @@ class Introduction extends Component {
                             <p>github.com/bora-bayraktar</p>
                         </a>
                     </div>
+                    <div className="info">
+                        <h5>EMAIL:</h5>
+                        <a href="mailto:kemalborabayraktar@gmail.com">
+                            <p>kemalborabayraktar@gmail.com</p>
+                        </a>
+                    </div>
                 </div>
+                <FavButton
+                    name="display-resume"
+                    content="Display Resume"
+                    goHere="https://user-images.githubusercontent.com/78881290/152663929-5355700c-0689-41cf-a678-8dcb223c100a.png" // TODO: Make the PDF openable.
+                    target="_blank"
+                />
             </div>
         );
     }

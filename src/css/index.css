@@ -9,16 +9,9 @@ html,
 body {
     margin: 0px;
     height: 100vh;
-    background-color: rgb(240, 240, 240);
 }
 
 /*----------------- HEADER -----------------*/
-
-@media screen and (min-width: 600px) {
-    .header {
-        border: 3.5vmin solid white;
-    }
-}
 
 .header {
     height: 100vh;
@@ -28,28 +21,6 @@ body {
         var(--favcolor) 49.9%,
         rgb(240, 240, 240) 50%
     );
-}
-
-#mail,
-#location {
-    position: absolute;
-    top: -2.7vmin;
-    font: 1vmax "Inter";
-    color: rgb(48, 48, 48);
-    font-weight: 700;
-}
-
-#location {
-    left: 0vw;
-}
-
-#mail {
-    right: 0vw;
-    text-decoration: none !important;
-}
-
-#mail:hover {
-    color: var(--favcolor);
 }
 
 .hello {
@@ -163,6 +134,48 @@ body {
     background-size: 0% 0.2vmax;
 }
 
+@media screen and (max-width: 600px) {
+    html,
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html,
+    body {
+        border-left: 1.5vw solid white;
+        border-right: 1.5vw solid white;
+    }
+
+    body:before,
+    body:after {
+        content: "";
+        position: fixed;
+        background: white;
+        left: 0;
+        right: 0;
+        height: 2.5vw;
+        z-index: 1;
+    }
+
+    body:before {
+        top: 0;
+    }
+
+    body:after {
+        bottom: 0;
+    }
+
+    .more-about {
+        bottom: 9vh;
+    }
+
+    .icons {
+        bottom: 9vh;
+    }
+}
+
 /*----------------- ABOUT -----------------*/
 
 .about {
@@ -269,14 +282,11 @@ body {
 .display-resume {
     font: 1.5vmax "Inter";
     color: var(--black);
-    margin-top: 4vh;
-    top: 50vh;
-    position: absolute;
 }
 
 .info-container {
     top: 30vh;
-    margin-top: 4vh;
+    margin: 4vh 0;
 }
 
 .info {
@@ -309,6 +319,10 @@ body {
 }
 
 @media screen and (max-width: 605px) {
+    .about {
+        height: 125vh;
+    }
+
     .about-header {
         top: 6vh;
     }
@@ -350,13 +364,14 @@ body {
     }
 
     .display-resume {
-        top: 37vh;
+        top: 43vh;
         width: 100%;
         text-align: center;
+        margin-top: 5vh;
     }
 
     .skills {
-        top: 72vh;
+        top: 78vh;
         width: 100%;
         border-radius: 0%;
         height: 50vh;
@@ -535,6 +550,9 @@ body {
 }
 
 @media screen and (max-width: 690px) {
+    .more {
+    }
+
     .experience-education {
         display: block;
         top: 32vh;
