@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.89bb7428.css",
+    "main.js": "/portfolio/static/js/main.e9999e39.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/me.png": "/portfolio/static/media/me.93be2876eb9025a0bed9.png",
+    "static/media/Inter-Black.ttf": "/portfolio/static/media/Inter-Black.24d6be6c502d39fb3ce1.ttf",
+    "static/media/Comforter-Regular.ttf": "/portfolio/static/media/Comforter-Regular.5cfd90f7c4f8f5f91c44.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/portfolio/static/media/Montserrat-SemiBold.04af9a9e62bb4c47bd55.ttf",
+    "static/media/Montserrat-ExtraBold.ttf": "/portfolio/static/media/Montserrat-ExtraBold.5daafc620ecc802516f9.ttf",
+    "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
+    "static/media/Montserrat-Black.ttf": "/portfolio/static/media/Montserrat-Black.1b9fba4a75b89b0dd96a.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.89bb7428.css.map": "/portfolio/static/css/main.89bb7428.css.map",
+    "main.e9999e39.js.map": "/portfolio/static/js/main.e9999e39.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89bb7428.css",
+    "static/js/main.e9999e39.js"
+  ]
+}
