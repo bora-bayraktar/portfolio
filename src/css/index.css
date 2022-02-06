@@ -92,7 +92,7 @@ body {
 
     display: inline-block;
     padding-bottom: 0.2vmax;
-    background-image: linear-gradient(#000, #000);
+    background-image: linear-gradient(var(--black), var(--black));
     background-position: left bottom;
     background-size: 100% 0.2vmax;
     background-repeat: no-repeat;
@@ -367,7 +367,6 @@ body {
         top: 43vh;
         width: 100%;
         text-align: center;
-        margin-top: 5vh;
     }
 
     .skills {
@@ -435,7 +434,7 @@ body {
 }
 
 .experience-education {
-    position: inherit;
+    position: absolute;
     top: 45vh;
     display: flex;
     gap: 10vw;
@@ -551,15 +550,16 @@ body {
 
 @media screen and (max-width: 690px) {
     .more {
+        overflow: auto;
     }
 
     .experience-education {
         display: block;
-        top: 32vh;
+        top: 28vh;
     }
 
     .more h3 {
-        top: 25vh;
+        top: 20vh;
     }
 
     .info-class {
@@ -612,4 +612,115 @@ body {
     }
 }
 
-/*----------------- EXPERIENCE & EDUCATION -----------------*/
+/*----------------- FOOTER -----------------*/
+
+.footer {
+    height: 40vh;
+    background-color: var(--black);
+    position: relative;
+    width: 100%;
+}
+
+.footer-header {
+    position: absolute;
+    right: 8vw;
+    top: 5vw;
+}
+
+.footer-header h1 {
+    font: 5vmin "Montserrat";
+    color: rgb(240, 240, 240);
+    font-weight: 900;
+    line-height: 0.8em;
+}
+
+.footer h3 {
+    font: 1.6vmax "Montserrat";
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 50vw;
+    line-height: 4vh;
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    top: 45%;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5vw;
+}
+
+.contact .container {
+    display: flex;
+    gap: 2vw;
+}
+
+.contact .container .contact-icon,
+.contact .container p {
+    color: rgb(240, 240, 240);
+}
+
+.contact .container h4,
+.contact .container p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact .container h4 {
+    font-weight: 700;
+    color: var(--favcolor);
+}
+
+.contact .container a {
+    text-decoration: none !important;
+}
+
+.contact .container a p {
+    transition: all 0.4s ease-in-out;
+}
+
+.contact .container a p:hover {
+    color: var(--favcolor);
+}
+
+.contact .container .contact-icon {
+    font-size: 2.2vmax;
+    top: 10%;
+    position: relative;
+}
+
+@media screen and (max-width: 690px) {
+    .footer {
+        height: 40vh;
+    }
+
+    .footer-header {
+        right: 15%;
+        top: 10%;
+    }
+
+    .footer h3 {
+        left: 15%;
+    }
+
+    .contact {
+        display: block;
+        top: 40%;
+    }
+
+    .contact .container h4 {
+        font-size: 0.88rem;
+    }
+
+    .contact .container p {
+        font-size: 0.7rem;
+    }
+
+    .contact .container {
+        gap: 7vw;
+        margin-bottom: 2vh;
+    }
+}
