@@ -401,7 +401,7 @@ body {
     }
 }
 
-/*----------------- EXPERIENCE & EDUCATION -----------------*/
+/*----------------- MORE -----------------*/
 
 .more {
     position: relative;
@@ -548,9 +548,28 @@ body {
     margin-bottom: 5vh;
 }
 
+.download-resume {
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+    font: 1.5vmax "Inter";
+    color: var(--black);
+}
+
 @media screen and (max-width: 690px) {
     .more {
         overflow: auto;
+    }
+
+    .download-resume {
+        position: relative;
+        text-align: center;
+        top: 0vh;
+        margin-bottom: 5vh;
+    }
+
+    .fav-button {
+        font-size: 0.9rem;
     }
 
     .experience-education {
