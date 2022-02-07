@@ -15,10 +15,9 @@ class Footer extends Component {
                 <h3>
                     Feel{" "}
                     <span
-                        id="handwritten-me"
+                        id="handwritten-free"
                         style={{
                             color: "rgb(237, 100, 89)",
-                            fontSize: "3.5vmin",
                         }}
                     >
                         free

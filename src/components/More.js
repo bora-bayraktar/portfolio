@@ -26,13 +26,13 @@ class More extends Component {
                 <div className="experience-education">
                     <Experience />
                     <Education />
-                    <FavButton
-                        goHere="https://github.com/bora-bayraktar/dotfiles/files/8010764/CV.pdf"
-                        download
-                        content="Download Resume"
-                        name="download-resume"
-                    />
                 </div>
+                <FavButton
+                    goHere="https://github.com/bora-bayraktar/dotfiles/files/8010764/CV.pdf"
+                    download
+                    content="Download Resume"
+                    name="download-resume"
+                />
             </div>
         );
     }

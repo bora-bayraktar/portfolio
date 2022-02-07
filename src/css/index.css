@@ -406,24 +406,23 @@ body {
 .more {
     position: relative;
     background-color: rgb(240, 240, 240);
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 .more h3 {
-    text-align: right;
     font: 2vmax "Montserrat";
     font-weight: 900;
-    margin-right: 10vw;
-    width: 100vw;
-    position: absolute;
-    right: 0;
-    top: 34vh;
+    width: 90vw;
+    text-align: right;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 .more-header {
-    position: absolute;
-    left: 10vw;
-    top: 7vh;
+    width: 100%;
+    padding-left: 7vw;
+    padding-top: 5vh;
 }
 
 .more-header h1 {
@@ -434,7 +433,6 @@ body {
 }
 
 .experience-education {
-    position: absolute;
     top: 45vh;
     display: flex;
     gap: 10vw;
@@ -549,23 +547,19 @@ body {
 }
 
 .download-resume {
-    position: absolute;
-    bottom: 0vh;
-    right: 0vw;
     font: 1.5vmax "Inter";
     color: var(--black);
+    padding-bottom: 7vh;
+    width: 100%;
+    text-align: right;
+    padding-right: 5vw;
 }
 
 @media screen and (max-width: 690px) {
-    .more {
-        overflow: auto;
-    }
-
     .download-resume {
-        position: relative;
         text-align: center;
-        top: 0vh;
-        margin-bottom: 5vh;
+        width: 90%;
+        margin-left: 7vw;
     }
 
     .fav-button {
@@ -574,17 +568,33 @@ body {
 
     .experience-education {
         display: block;
-        top: 28vh;
     }
 
     .more h3 {
-        top: 20vh;
+        margin-top: 5vh;
+        font-size: 1rem;
+    }
+
+    #handwritten-me {
+        font-size: 1.6rem;
     }
 
     .info-class {
         margin: 0;
         width: 100%;
         padding: 0 10vw;
+    }
+
+    .info-class h4 {
+        font-size: 1rem;
+    }
+
+    .info-class-container h6 {
+        font-size: 0.8rem;
+    }
+
+    .info-class-container p {
+        font-size: 0.7rem;
     }
 
     .info-class-container {
@@ -602,6 +612,7 @@ body {
 
     .info-content {
         width: 53vw;
+        margin-left: 1vw;
     }
 
     .info-icon {
@@ -634,16 +645,19 @@ body {
 /*----------------- FOOTER -----------------*/
 
 .footer {
-    height: 40vh;
+    min-height: 40vh;
+    height: auto;
     background-color: var(--black);
     position: relative;
     width: 100%;
 }
 
 .footer-header {
-    position: absolute;
-    right: 8vw;
-    top: 5vw;
+    width: 10%;
+    margin-left: auto;
+    margin-right: 10vw;
+    padding-top: 5vh;
+    float: right;
 }
 
 .footer-header h1 {
@@ -657,19 +671,21 @@ body {
     font: 1.6vmax "Montserrat";
     font-weight: 700;
     color: rgb(240, 240, 240);
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
     width: 50vw;
     line-height: 4vh;
+    padding-top:5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+#handwritten-free {
+    font: 3.5vmin "Comforter";
 }
 
 .contact {
     display: flex;
-    position: relative;
-    top: 45%;
     width: 80%;
-    margin: 0 auto;
+    margin: 8vh auto;
     gap: 5vw;
 }
 
@@ -712,30 +728,34 @@ body {
 }
 
 @media screen and (max-width: 690px) {
-    .footer {
-        height: 40vh;
-    }
-
     .footer-header {
-        right: 15%;
-        top: 10%;
+        margin-right: 20vw;
     }
 
     .footer h3 {
-        left: 15%;
+        margin-left: 10vw;
+        font-size: 0.7rem;
+    }
+
+    #handwritten-free {
+        font-size: 1rem
     }
 
     .contact {
         display: block;
-        top: 40%;
     }
 
     .contact .container h4 {
-        font-size: 0.88rem;
+        font-size: 0.8rem;
     }
 
     .contact .container p {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+    }
+
+    .contact .container .contact-icon {
+        font-size: 0.9rem;
+        padding-top: 1vh;
     }
 
     .contact .container {
