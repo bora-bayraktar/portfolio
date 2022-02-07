@@ -246,7 +246,7 @@ body {
     background-color: var(--black);
     border-radius: 1%;
     float: right;
-    margin-top: 10vh;
+    margin-top: 13vh;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
