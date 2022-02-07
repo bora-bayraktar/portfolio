@@ -181,13 +181,15 @@ body {
 .about {
     background-color: rgb(240, 240, 240);
     position: relative;
-    height: 120vh;
+    min-height: 120vh;
+    height: auto;
+    overflow: hidden;
 }
 
 .about-header {
-    position: absolute;
-    top: 7vh;
-    left: 10vw;
+    padding-top: 7vh;
+    margin-left: 10vw;
+    float: left;
 }
 
 .about-header h1 {
@@ -198,10 +200,11 @@ body {
 }
 
 .introduction {
-    left: 10vw;
-    top: 37vh;
-    position: absolute;
+    margin: 0 10vw;
+    margin-right: 5vw;
+    padding-top: 15vh;
     width: 30vw;
+    float: left;
 }
 
 .introduction h3 {
@@ -224,12 +227,12 @@ body {
 
 .about img {
     width: 25vmin;
-    position: absolute;
-    right: 15vw;
-    top: 7vh;
+    margin-right: 15vw;
+    margin-top: 7vh;
     transition: 0.2s ease-in-out;
     border: 5px solid var(--favcolor);
     border-radius: 50%;
+    float: right;
 }
 
 .about img:hover {
@@ -237,13 +240,13 @@ body {
 }
 
 .skills {
-    width: 50vw;
-    height: 70vh;
+    width: 40vw;
+    height: auto;
+    min-height: 60vh;
     background-color: var(--black);
     border-radius: 1%;
-    position: absolute;
-    right: 0;
-    top: 37vh;
+    float: right;
+    margin-top: 10vh;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -266,8 +269,9 @@ body {
 .tools {
     position: relative;
     left: 25%;
-    top: 25%;
+    top: 15%;
     width: 15vw;
+    height: 25vh;
 }
 
 .languages,
@@ -319,33 +323,29 @@ body {
 }
 
 @media screen and (max-width: 605px) {
-    .about {
-        height: 125vh;
-    }
-
-    .about-header {
-        top: 6vh;
+    .about-header h1 {
+        font-size: 2rem;
     }
 
     .about img {
-        position: absolute;
-        right: 15vw;
-        top: 6vh;
         border: 3px solid var(--favcolor);
+        width: 5rem;
     }
 
     .introduction {
-        top: 23vh;
-        left: 10vw;
         width: 80%;
+        margin-top: 0vh;
+        padding-top: 5vh;
     }
 
     .introduction h3 {
-        font-size: 2.6vh;
+        font-size: 1rem;
     }
 
     .introduction p {
         margin-top: 1vh;
+        font-size: 0.6rem;
+        line-height: 0.9rem;
     }
 
     .info-container {
@@ -354,50 +354,46 @@ body {
 
     .info h5 {
         margin: 0;
-        font-size: 3.3vw;
+        font-size: 0.7rem;
     }
 
     .info p {
         margin: 0;
         margin-top: 0.5vh;
-        font-size: 3.3vw;
+        font-size: 0.7rem;
     }
 
     .display-resume {
-        top: 43vh;
         width: 100%;
         text-align: center;
     }
 
     .skills {
-        top: 78vh;
         width: 100%;
         border-radius: 0%;
-        height: 50vh;
+        margin-top: 8vh;
+        min-height: fit-content;
     }
 
     .programming,
     .tools {
-        position: relative;
-        top: 25%;
-        width: 15vw;
+        width: 30vw;
     }
 
     .languages,
     .interests {
-        top: 10%;
-        width: 15vw;
-        height: 22vh;
+        width: 30vw;
+        margin-bottom: 2vh;
     }
 
     .skills div p {
         margin-bottom: 1vh;
-        width: 20vw;
-        font-size: 0.7em;
+        width: 30vw;
+        font-size: 0.7rem;
     }
 
     .skills div h3 {
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
 }
 
@@ -673,7 +669,7 @@ body {
     color: rgb(240, 240, 240);
     width: 50vw;
     line-height: 4vh;
-    padding-top:5vh;
+    padding-top: 5vh;
     margin-left: 5vw;
     margin-bottom: 5vh;
 }
@@ -738,7 +734,7 @@ body {
     }
 
     #handwritten-free {
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     .contact {

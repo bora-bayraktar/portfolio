@@ -8,8 +8,8 @@ class About extends Component {
         return (
             <div className="about" id="about">
                 <AboutHeader />
-                <Introduction />
                 <img src={require("../assets/me.png")} />
+                <Introduction />
                 <Skills />
             </div>
         );
