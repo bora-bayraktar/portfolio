@@ -28,7 +28,7 @@ class More extends Component {
                     <Education />
                 </div>
                 <FavButton
-                    goHere="https://github.com/bora-bayraktar/dotfiles/files/8010764/CV.pdf"
+                    goHere="https://github.com/bora-bayraktar/portfolio/files/8154997/CV.pdf"
                     download
                     content="Download Resume"
                     name="download-resume"

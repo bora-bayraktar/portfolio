@@ -46,7 +46,7 @@ class Introduction extends Component {
                 <FavButton
                     name="display-resume"
                     content="Display Resume"
-                    goHere="https://user-images.githubusercontent.com/78881290/152663929-5355700c-0689-41cf-a678-8dcb223c100a.png"
+                    goHere="https://user-images.githubusercontent.com/78881290/156021414-f072839e-9f0f-45c9-924d-8ddd3b5e7a53.png"
                     target="_blank"
                 />
             </div>
