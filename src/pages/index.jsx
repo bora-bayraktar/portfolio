@@ -3,6 +3,7 @@ import GlobalStyles from '../styles/globalStyles';
 import NavBar from '../components/navbar';
 import Menu from '../components/menu';
 import Header from '../components/header';
+import Main from '../components/main';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function App() {
       <NavBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       <Header />
+      <Main />
     </React.Fragment>
   );
 }

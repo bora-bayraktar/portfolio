@@ -27,7 +27,7 @@ export default createGlobalStyle`
     font-size: 1.6rem;
 
     @media ${screens.small} {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     @media ${screens.medium} {
@@ -37,7 +37,8 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-    
+    color: inherit;
+
     &:visited {
       color: inherit;
     }

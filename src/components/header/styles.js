@@ -24,8 +24,9 @@ export const HeaderHelloNameDiv = styled.div`
   }
 `;
 
-export const HeaderHello = styled.h2`
+export const HeaderHello = styled.p`
   font-size: 3rem;
+  font-weight: bold;
 
   @media ${screens.large} {
     font-size: 3.5rem;
