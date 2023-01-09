@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import screens from '../../styles/screens';
+import screens from '@styles/screens';
 
 export const Main = styled.main`
-  padding: 10rem;
+  padding: 0 10rem;
 
   @media ${screens.small} {
-    padding: 4rem;
+    padding: 0 4rem;
   }
 `;

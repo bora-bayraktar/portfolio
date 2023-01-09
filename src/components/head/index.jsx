@@ -10,7 +10,7 @@ export function Head() {
       <meta name="copyright" content="Kemal Bora Bayraktar" />
       <meta rel="canonical" href="https://kemalborabayraktar.com" />
 
-      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ff5851" />
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f8f8" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1b20" />
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -35,12 +35,26 @@ export default createGlobalStyle`
     }
   }
 
+  svg {
+    color: ${colors.black};
+  }
+
   a {
     text-decoration: none;
     color: inherit;
 
     &:visited {
       color: inherit;
+    }
+
+    svg {
+      transition: all 0.2s ease-in-out;
+
+      @media (hover: hover) {
+        &:hover {
+          color: ${colors.orange};
+        }
+      }
     }
   }
 `;

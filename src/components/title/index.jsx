@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-
-import Dot from '../dot';
+import Dot from '@components/dot';
 
 export default function Title({ firstLine, secondLine, color, dotColor, justify }) {
   return (

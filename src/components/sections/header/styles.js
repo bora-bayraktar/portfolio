@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
-import fonts from '../../styles/fonts';
-import screens from '../../styles/screens';
+import colors from '@styles/colors';
+import fonts from '@styles/fonts';
+import screens from '@styles/screens';
 
 export const HeaderContainer = styled.header`
   width: 100%;

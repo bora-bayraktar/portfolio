@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
-import GlobalStyles from '../styles/globalStyles';
-import NavBar from '../components/navbar';
-import Menu from '../components/menu';
-import Header from '../components/header';
-import Main from '../components/main';
+import GlobalStyles from '@styles/globalStyles';
+import NavBar from '@components/navbar';
+import Menu from '@components/menu';
+import Header from '@components/sections/header';
+import Main from '@components/sections/main';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,4 +24,4 @@ export default function App() {
   );
 }
 
-export { Head } from '../components/head';
+export { Head } from '@components/head';

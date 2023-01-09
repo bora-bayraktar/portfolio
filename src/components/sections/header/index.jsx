@@ -1,8 +1,8 @@
 import React from 'react';
-import * as S from './styles';
-import Dot from '../dot';
-import colors from '../../styles/colors';
 import Typical from 'react-typical';
+import * as S from './styles';
+import Dot from '@components/dot';
+import colors from '@styles/colors';
 
 const typicalSteps = [
   'Software Engineer.',
@@ -15,7 +15,7 @@ const typicalSteps = [
   500,
 ];
 
-export default function Header() {
+function Header() {
   return (
     <S.HeaderContainer>
       <S.HeaderHelloNameDiv>
@@ -34,3 +34,5 @@ export default function Header() {
     </S.HeaderContainer>
   );
 }
+
+export default React.memo(Header);

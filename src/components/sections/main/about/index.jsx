@@ -1,9 +1,8 @@
 import React from 'react';
 import * as S from './styles';
-import colors from '../../styles/colors';
-
-import Title from '../title';
-import Subtitle from '../subtitle';
+import colors from '@styles/colors';
+import Title from '@components/title';
+import Subtitle from '@components/subtitle';
 
 export default function About() {
   return (

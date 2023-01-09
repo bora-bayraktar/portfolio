@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
-
-import Link from '../link';
-import SocialIcons from '../social-icons';
+import colors from '@styles/colors';
+import Link from '@components/link';
+import SocialIcons from '@components/social-icons';
+import { GoLogoGithub } from '@react-icons/all-files/go/GoLogoGithub';
 
 export const MenuContainer = styled.div`
   position: fixed;
@@ -121,6 +121,10 @@ export const GitHubOpenSource = styled.a`
     top: 8px;
     left: 0;
   }
+`;
+
+export const GithubLogoIcon = styled(GoLogoGithub)`
+  font-size: 2.5rem;
 `;
 
 export const FirstLine = styled.p``;

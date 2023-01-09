@@ -1,10 +1,8 @@
 import React from 'react';
 import * as S from './styles';
-import { GithubLogoIcon } from '../icons';
 
 const links = [
   { title: 'About.', href: '/', delay: '0.3s' },
-  { title: 'Skills.', href: '/', delay: '0.35s' },
   { title: 'Experience.', href: '/', delay: '0.4s' },
   { title: 'Education.', href: '/', delay: '0.45s' },
 ];
@@ -17,9 +15,8 @@ export default function Menu({ isMenuOpen, toggleMenu }) {
           <S.LeftContent>
             <S.MenuLinkContainer>
               {links.map((link) => (
-                <S.LinkMask>
+                <S.LinkMask key={link.title}>
                   <S.MenuLink
-                    key={link.title}
                     href={link.href}
                     isMenuOpen={isMenuOpen}
                     underlined={false}
@@ -46,7 +43,7 @@ export default function Menu({ isMenuOpen, toggleMenu }) {
             <S.GitHubOpenSource href="/" isMenuOpen={isMenuOpen}>
               <S.FirstLine>This website is</S.FirstLine>
               <S.SecondLine>
-                open-source on <GithubLogoIcon />.
+                open-source on <S.GithubLogoIcon />.
               </S.SecondLine>
             </S.GitHubOpenSource>
           </S.LeftContent>

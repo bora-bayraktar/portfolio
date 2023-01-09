@@ -1,16 +1,12 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as S from './styles';
-import colors from '../../styles/colors';
-
-import Dot from '../dot';
-import { CloseMenuIcon, MenuIcon } from '../icons';
-
-import useScrollDirection from '../../hooks/useScrollDirection';
+import colors from '@styles/colors';
+import Dot from '@components/dot';
+import useScrollDirection from '@hooks/useScrollDirection';
 
 const links = [
   { title: 'About', href: '/' },
-  { title: 'Skills', href: '/' },
   { title: 'Experience', href: '/' },
   { title: 'Education', href: '/' },
 ];
@@ -52,8 +48,8 @@ export default function NavBar({ isMenuOpen, toggleMenu }) {
 
       <S.MenuIconContainer onClick={toggleMenu}>
         <S.MenuIconWrapper isMenuOpen={isMenuOpen}>
-          <CloseMenuIcon size={20} />
-          <MenuIcon size={20} />
+          <S.CloseMenuIcon size={20} />
+          <S.MenuIcon size={20} />
         </S.MenuIconWrapper>
       </S.MenuIconContainer>
     </S.NavbarContainer>

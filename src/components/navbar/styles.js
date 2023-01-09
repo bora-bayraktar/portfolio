@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
-import screens from '../../styles/screens';
-
-import Link from '../link';
-import SocialIcons from '../social-icons';
+import colors from '@styles/colors';
+import screens from '@styles/screens';
+import Link from '@components/link';
+import SocialIcons from '@components/social-icons';
+import { CgMenuRight } from '@react-icons/all-files/cg/CgMenuRight';
+import { IoClose } from '@react-icons/all-files/io5/IoClose';
 
 const navbarHeight = '60px';
 
@@ -114,3 +115,7 @@ export const MenuIconWrapper = styled.div`
   transform: ${(props) => (props.isMenuOpen ? 'translateX(77%)' : 'translateX(0)')};
   transition: all 0.4s cubic-bezier(1, 0, 0, 1);
 `;
+
+export const MenuIcon = styled(CgMenuRight)``;
+
+export const CloseMenuIcon = styled(IoClose)``;

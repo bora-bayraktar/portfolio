@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import screens from '../../styles/screens';
+import screens from '@styles/screens';
 
 export const StyledTitleContainer = styled.div`
   display: flex;

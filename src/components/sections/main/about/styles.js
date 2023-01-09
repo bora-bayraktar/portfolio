@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
-import screens from '../../styles/screens';
+import colors from '@styles/colors';
+import screens from '@styles/screens';
 
-export const AboutSection = styled.section``;
+export const AboutSection = styled.section`
+  padding: 10rem 0;
+
+  @media ${screens.small} {
+    padding: 4rem 0;
+  }
+`;
 
 export const AboutInfoContainer = styled.div`
   margin-top: 3rem;
@@ -62,6 +68,7 @@ export const StyledParagraph = styled.p`
 export const SkillsContainer = styled.div`
   margin-right: -10rem;
   min-width: calc(50% + 10rem);
+  min-height: 40rem;
   background-color: ${colors.black};
   padding: 8rem;
   padding-right: 2rem;
