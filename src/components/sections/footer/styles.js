@@ -125,12 +125,12 @@ export const GithubIcon = styled(FaGithub)`
 `;
 
 export const StyledLink = styled.a`
-  color: ${colors.white};
+  color: ${colors.white} !important;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: ${colors.orange};
+    color: ${colors.orange} !important;
   }
 `;
 
