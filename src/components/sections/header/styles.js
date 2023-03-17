@@ -26,7 +26,7 @@ export const HeaderHelloNameDiv = styled.div`
 
 export const HeaderHello = styled.p`
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 900;
 
   @media ${screens.large} {
     font-size: 3.5rem;

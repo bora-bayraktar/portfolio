@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';

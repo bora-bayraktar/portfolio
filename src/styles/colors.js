@@ -3,8 +3,7 @@ const colors = {
   black: '#1c1b20',
   white: '#f8f8f8',
   lightGrey: '#7d7d7d',
-  darkGrey: '#63626e',
-  darkBlue: '#414a6b',
+  darkGrey: '#706f7a',
 };
 
 export default colors;

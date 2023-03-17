@@ -6,7 +6,7 @@ import Subtitle from '@components/subtitle';
 
 export default function About() {
   return (
-    <S.AboutSection>
+    <S.AboutSection id="about">
       <Title
         firstLine="AB"
         secondLine="OUT"
@@ -19,9 +19,10 @@ export default function About() {
           <S.SubtitleParagraphContainer>
             <Subtitle first="Let" second="me" third="introduce myself." />
             <S.StyledParagraph>
-              I'm Bora. I study Computer Science and Economics at Koç University. Besides my
-              studies, I spare time for my social life. I try to improve my programming skills and
-              knowledge by researching and learning in my free time.
+              I'm Bora. I study Computer Science and Economics at Koç University and Computer
+              Science ad Technische Universität Berlin. Besides my studies, I also work as a
+              Software Engineer. I try to improve my programming skills and knowledge by researching
+              and learning in my free time.
             </S.StyledParagraph>
           </S.SubtitleParagraphContainer>
 
@@ -29,7 +30,12 @@ export default function About() {
             {infos.map((info) => (
               <S.Info key={info.name}>
                 <S.InfoName>{info.name}:</S.InfoName>
-                <S.InfoContent href={info.href ? info.href : null}>{info.info}</S.InfoContent>
+                <S.InfoContent
+                  href={info.href ? info.href : null}
+                  rel={info.href ? 'norefferer, nofollow' : null}
+                >
+                  {info.info}
+                </S.InfoContent>
               </S.Info>
             ))}
           </S.InfoWrapper>

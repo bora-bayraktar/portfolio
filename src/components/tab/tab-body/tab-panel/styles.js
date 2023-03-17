@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 import colors from '@styles/colors';
+import screens from '@styles/screens';
 
 export const StyledTabPanel = styled.div`
-  padding: 5rem;
+  padding: 3rem;
   height: 500px;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0 1rem 1rem 0;
   background-color: ${colors.black};
   color: ${colors.white};
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: ${({ active }) => (active ? 'block' : 'none')};
+
+  @media ${screens.small}, ${screens.medium} {
+    border-radius: 0 0 1rem 1rem;
+  }
 `;

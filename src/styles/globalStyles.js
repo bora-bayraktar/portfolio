@@ -13,6 +13,7 @@ export default createGlobalStyle`
   html {
     height: 100%;
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body, 

@@ -6,9 +6,9 @@ import Dot from '@components/dot';
 import useScrollDirection from '@hooks/useScrollDirection';
 
 const links = [
-  { title: 'About', href: '/' },
-  { title: 'Experience', href: '/' },
-  { title: 'Education', href: '/' },
+  { title: 'About', href: '#about' },
+  { title: 'More', href: '#more' },
+  { title: 'Contact', href: '#contact' },
 ];
 
 export default function NavBar({ isMenuOpen, toggleMenu }) {
@@ -39,7 +39,11 @@ export default function NavBar({ isMenuOpen, toggleMenu }) {
               {link.title}
             </S.NavbarLink>
           ))}
-          <S.NavbarLink href="/" style={{ fontWeight: 400 }}>
+          <S.NavbarLink
+            href="/Kemal Bora Bayraktar.pdf"
+            target="_blank"
+            style={{ fontWeight: 400 }}
+          >
             Resume
           </S.NavbarLink>
         </S.NavbarLinksContainer>

@@ -52,6 +52,10 @@ export const InfoContent = styled.a`
   color: ${colors.lightGrey};
   transition: 0.2s ease-in-out;
 
+  &:visited {
+    color: ${colors.lightGrey};
+  }
+
   ${(props) => props.href && `&:hover { color: ${colors.orange}; }`}
 `;
 
@@ -100,7 +104,7 @@ export const SkillUl = styled.ul`
 
 export const SkillLi = styled.li`
   color: ${colors.darkGrey};
-  line-height: 1.8; ;
+  line-height: 1.8;
 `;
 
 export const SkillLiHeader = styled.li`

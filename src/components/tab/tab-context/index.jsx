@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useMemo } from 'react';
+import * as S from './styles';
 
 export default function TabContext({ children }) {
   const [TabList, TabContent] = children;
@@ -13,9 +14,9 @@ export default function TabContext({ children }) {
   const TabContentWithProps = useMemo(() => React.cloneElement(TabContent, { value }), [value]);
 
   return (
-    <React.Fragment>
+    <S.StyledTabContextContainer>
       {TabListWithProps}
       {TabContentWithProps}
-    </React.Fragment>
+    </S.StyledTabContextContainer>
   );
 }

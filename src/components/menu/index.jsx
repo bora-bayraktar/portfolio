@@ -2,9 +2,9 @@ import React from 'react';
 import * as S from './styles';
 
 const links = [
-  { title: 'About.', href: '/', delay: '0.3s' },
-  { title: 'Experience.', href: '/', delay: '0.4s' },
-  { title: 'Education.', href: '/', delay: '0.45s' },
+  { title: 'About.', href: '#about', delay: '0.3s' },
+  { title: 'More.', href: '#more', delay: '0.4s' },
+  { title: 'Contact.', href: '#contact', delay: '0.45s' },
 ];
 
 export default function Menu({ isMenuOpen, toggleMenu }) {
@@ -21,6 +21,7 @@ export default function Menu({ isMenuOpen, toggleMenu }) {
                     isMenuOpen={isMenuOpen}
                     underlined={false}
                     delay={link.delay}
+                    onClick={toggleMenu}
                   >
                     {link.title}
                   </S.MenuLink>
@@ -28,7 +29,8 @@ export default function Menu({ isMenuOpen, toggleMenu }) {
               ))}
               <S.LinkMask style={{ height: '30px' }}>
                 <S.MenuLink
-                  href=""
+                  href="/Kemal Bora Bayraktar.pdf"
+                  target="_blank"
                   isMenuOpen={isMenuOpen}
                   underlined={true}
                   delay="0.5s"
@@ -40,7 +42,11 @@ export default function Menu({ isMenuOpen, toggleMenu }) {
               <S.MenuIconsContainer isMenuOpen={isMenuOpen} iconSize={18} />
             </S.MenuLinkContainer>
 
-            <S.GitHubOpenSource href="/" isMenuOpen={isMenuOpen}>
+            <S.GitHubOpenSource
+              href="https://github.com/bora-bayraktar/portfolio"
+              isMenuOpen={isMenuOpen}
+              rel="noreferer, nofollow"
+            >
               <S.FirstLine>This website is</S.FirstLine>
               <S.SecondLine>
                 open-source on <S.GithubLogoIcon />.
