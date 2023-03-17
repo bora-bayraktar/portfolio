@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Comforter";
+    src: local("Comforter"),
+        url(../fonts/Comforter/Comforter-Regular.ttf) format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+        url(../fonts/Inter/static/Inter-Black.ttf) format("truetype");
+    font-weight: 900;
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url(../fonts/Montserrat/static/Montserrat-Black.ttf) format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url(../fonts/Montserrat/static/Montserrat-SemiBold.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url(../fonts/Montserrat/static/Montserrat-Bold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf) format("truetype");
+    font-weight: 700;
+}
