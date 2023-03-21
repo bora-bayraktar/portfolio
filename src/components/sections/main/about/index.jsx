@@ -20,7 +20,7 @@ export default function About() {
             <Subtitle first="Let" second="me" third="introduce myself." />
             <S.StyledParagraph>
               I'm Bora. I study Computer Science and Economics at Koç University and Computer
-              Science ad Technische Universität Berlin. Besides my studies, I also work as a
+              Science at Technische Universität Berlin. Besides my studies, I also work as a
               Software Engineer. I try to improve my programming skills and knowledge by researching
               and learning in my free time.
             </S.StyledParagraph>
